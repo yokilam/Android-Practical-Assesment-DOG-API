@@ -33,7 +33,6 @@ public class DogsActivity extends AppCompatActivity{
     private ProgressBar progressBar;
     private SharedPreferences loginSharePref;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -57,13 +57,13 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/textview_margin_left"
             android:text="@string/spaniel"
-            android:textSize="25sp"
+            android:textSize="@dimen/welcome_user_text_size"
             android:gravity="center" />
 
         <ImageView
             android:id="@+id/spaniel_imageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/image_view_width"
+            android:layout_height="@dimen/image_view_height"
             android:layout_gravity="end"
             android:scaleType="centerCrop"/>
 
@@ -74,7 +74,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_marginTop="@dimen/cardview_margin_top"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="@dimen/card_view_height"
         android:elevation="8dp"
         app:cardCornerRadius="2dp">
 
@@ -83,13 +83,13 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/textview_margin_left"
             android:text="@string/retriever"
-            android:textSize="25sp"
+            android:textSize="@dimen/welcome_user_text_size"
             android:gravity="center" />
 
         <ImageView
             android:id="@+id/retriever_imageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/image_view_height"
+            android:layout_height="@dimen/image_view_height"
             android:layout_gravity="end"
             android:scaleType="centerCrop"/>
 
@@ -101,21 +101,21 @@
         android:layout_marginTop="@dimen/cardview_margin_top"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:elevation="8dp"
-        app:cardCornerRadius="2dp">
+        android:elevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/radius">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/textview_margin_left"
             android:text="@string/poodle"
-            android:textSize="25sp"
+            android:textSize="@dimen/dog_breed_name_text_size"
             android:gravity="center" />
 
         <ImageView
             android:id="@+id/poodle_imageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/image_view_width"
+            android:layout_height="@dimen/image_view_height"
             android:layout_gravity="end"
             android:scaleType="centerCrop"/>
 

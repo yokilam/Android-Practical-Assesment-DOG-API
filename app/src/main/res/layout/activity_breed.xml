@@ -4,12 +4,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layout_margin"
     tools:context="nyc.c4q.final_android_practical_assessment.BreedActivity">
 
     <TextView
         android:id="@+id/welcome_user_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/welcome_user_text_size"/>
+        android:textSize="@dimen/welcome_user_text_size"
+        tools:text="@string/testing"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/terrier_cardview"
+        android:layout_marginTop="@dimen/cardview_margin_top"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:text="@string/Terrier"
+            android:textSize="25sp"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/terrier_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/spaniel_cardview"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="@dimen/cardview_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:text="@string/spaniel"
+            android:textSize="25sp"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/spaniel_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:scaleType="centerCrop"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/retriever_cardview"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="@dimen/cardview_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:text="@string/retriever"
+            android:textSize="25sp"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/retriever_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:scaleType="centerCrop"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/poodle_cardview"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="@dimen/cardview_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/textview_margin_left"
+            android:text="@string/poodle"
+            android:textSize="25sp"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/poodle_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:scaleType="centerCrop"/>
+
+    </android.support.v7.widget.CardView>
+
 
 </LinearLayout>

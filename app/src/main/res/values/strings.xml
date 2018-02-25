@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Final_Android_Practical_Assessment</string>
+    <string name="app_name">Dog API</string>
     <string name="please_sign_in">Please Sign In.</string>
     <string name="username"> Username:</string>
     <string name="enter_username">Enter Username</string>
@@ -20,4 +20,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="testing">TESTING</string>
+    <string name="Terrier">Terrier</string>
+    <string name="spaniel">Spaniel</string>
+    <string name="retriever">Retriever</string>
+    <string name="poodle">Poodle</string>
 </resources>

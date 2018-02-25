@@ -144,6 +144,7 @@ public class BreedActivity extends AppCompatActivity implements View.OnClickList
 
     private void intentToDogsActivity(String breedname) {
         Intent intent= new Intent(BreedActivity.this, DogsActivity.class);
+        intent.putExtra("loginPrefKey", Constants.SHARED_PREF_KEY);
         intent.putExtra("breed", breedname);
         startActivity(intent);
     }

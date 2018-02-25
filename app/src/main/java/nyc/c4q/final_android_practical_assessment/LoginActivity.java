@@ -13,7 +13,6 @@ public class LoginActivity extends AppCompatActivity {
     private EditText username, password;
     private Button submitButton;
     private SharedPreferences loginSharePreference;
-    private static final String SHARED_PREF_KEY="loginSharedPrefenceres";
     private SharedPreferences.Editor editor;
 
     @Override
@@ -53,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void intentToBreedActivity() {
         Intent intent= new Intent(LoginActivity.this, BreedActivity.class);
-        intent.putExtra("loginPrefKey", SHARED_PREF_KEY);
+        intent.putExtra("loginPrefKey", Constants.SHARED_PREF_KEY);
         startActivity(intent);
     }
 
@@ -62,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
         password= findViewById(R.id.password_edittext);
         submitButton= findViewById(R.id.submit_button);
 
-        loginSharePreference= getApplicationContext().getSharedPreferences(SHARED_PREF_KEY, MODE_PRIVATE);
+        loginSharePreference= getApplicationContext().getSharedPreferences(Constants.SHARED_PREF_KEY, MODE_PRIVATE);
         editor = loginSharePreference.edit();
     }
 }

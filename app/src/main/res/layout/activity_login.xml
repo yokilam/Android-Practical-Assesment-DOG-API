@@ -8,7 +8,7 @@
     android:layout_marginStart="@dimen/login_margin_start"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="nyc.c4q.final_android_practical_assessment.MainActivity">
+    tools:context="nyc.c4q.final_android_practical_assessment.LoginActivity">
 
     <TextView
         android:id="@+id/signin_textview"
